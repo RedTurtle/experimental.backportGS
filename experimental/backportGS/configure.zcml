@@ -1,0 +1,28 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:monkey="http://namespaces.plone.org/monkey"
+    i18n_domain="experimental.backportGS">
+
+   <include package="collective.monkeypatcher" />
+
+    <monkey:patch
+     description="registerScript must support the authenticated and bundle attributes"
+     class="Products.ResourceRegistries.tools.JSRegistry.JSRegistryTool"
+     original="registerScript"
+     replacement=".patches.registerScript"
+     docstringWarning="true"
+	 preserveOriginal="true"
+    />
+
+    <monkey:patch
+     description="registerStylesheet must support the authenticated and bundle attributes"
+     class="Products.ResourceRegistries.tools.CSSRegistry.CSSRegistryTool"
+     original="registerStylesheet"
+     replacement=".patches.registerStylesheet"
+     docstringWarning="true"
+	 preserveOriginal="true"
+    />
+
+
+</configure>
