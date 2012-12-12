@@ -16,7 +16,7 @@
     />
 
     <monkey:patch
-     description="registerStylesheet must support the authenticated and bundle attributes"
+     description="registerStylesheet must support the authenticated, applyPrefix and bundle attributes"
      class="Products.ResourceRegistries.tools.CSSRegistry.CSSRegistryTool"
      original="registerStylesheet"
      replacement=".patches.registerStylesheet"
