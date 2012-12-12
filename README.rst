@@ -23,7 +23,7 @@ This product will **not** backport Generic Setup new features to Plone 4.3, but 
 cssregistry
 -----------
 
-Old CSSRegistry registration didn't know nothing about ``authenticated``, ``applyPrefix`` and ``bundle``
+Old **CSSRegistry** registration didn't know nothing about ``authenticated``, ``applyPrefix`` and ``bundle``
 paramenters.
 
 Those parameters are now ignored.
@@ -34,17 +34,19 @@ translated in the old way (using ``expression``).
 jsregistry
 ----------
 
-Old CSSRegistry registration didn't know nothing about ``authenticated``, and ``bundle`` paramenters.
+Old **CSSRegistry** registration didn't know nothing about ``authenticated``, and ``bundle`` paramenters.
 
 Those parameters are now ignored.
 
 If ``authenticated`` is provided and ``expression`` is not provided, the new ``authenticated`` feature is
 translated in the old way (using ``expression``).
 
-TODO
-====
+types
+-----
 
-Fix errors for **types** import step.
+Old **PropertyManagerHelpers** supports only ``content_icon`` registration instead of the new ``icon_expr``.
+
+If ``icon_expr`` is provided, it will be used as ``content_icon``. Also: an attempt to fix the data format is done.
 
 Authors
 =======

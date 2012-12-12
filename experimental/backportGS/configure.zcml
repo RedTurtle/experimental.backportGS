@@ -7,22 +7,29 @@
    <include package="collective.monkeypatcher" />
 
     <monkey:patch
-     description="registerScript must support the authenticated and bundle attributes"
-     class="Products.ResourceRegistries.tools.JSRegistry.JSRegistryTool"
-     original="registerScript"
-     replacement=".patches.registerScript"
-     docstringWarning="true"
-	 preserveOriginal="true"
+      description="registerScript must tolerate the authenticated and bundle attributes"
+      class="Products.ResourceRegistries.tools.JSRegistry.JSRegistryTool"
+      original="registerScript"
+      replacement=".patches.registerScript"
+      docstringWarning="true"
+      preserveOriginal="true"
     />
 
     <monkey:patch
-     description="registerStylesheet must support the authenticated, applyPrefix and bundle attributes"
-     class="Products.ResourceRegistries.tools.CSSRegistry.CSSRegistryTool"
-     original="registerStylesheet"
-     replacement=".patches.registerStylesheet"
-     docstringWarning="true"
-	 preserveOriginal="true"
+      description="registerStylesheet must tolerate the authenticated, applyPrefix and bundle attributes"
+      class="Products.ResourceRegistries.tools.CSSRegistry.CSSRegistryTool"
+      original="registerStylesheet"
+      replacement=".patches.registerStylesheet"
+      docstringWarning="true"
+      preserveOriginal="true"
     />
 
+    <monkey:patch
+      description="_initProperties must tolerate the content_icon instead of the icon_expr"
+      class="Products.GenericSetup.utils.PropertyManagerHelpers"
+      original="_initProperties"
+      replacement=".patches._initProperties"
+      docstringWarning="true"
+    />
 
 </configure>

@@ -13,7 +13,7 @@ setup(name='experimental.backportGS',
       classifiers=[
         "Framework :: Plone",
         "Framework :: Plone :: 3.3",
-        "Development Status :: 3 - Alpha",
+        "Development Status :: 4 - Beta",
         "Programming Language :: Python",
         ],
       keywords='plone generic-setup backport',

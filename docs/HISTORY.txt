@@ -4,8 +4,9 @@ Changelog
 0.2 (unreleased)
 ----------------
 
-- Nothing changed yet.
-
+- added log messages when patches are used [keul]
+- added support for substitution of new style ``icon_expr``
+  with old-style ``content_icon`` [keul]
 
 0.1 (2012-12-12)
 ----------------
