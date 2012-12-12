@@ -4,8 +4,8 @@ Introduction
 This product is only useful if you are in the very sad situation of needing a Plone product on a Plone 3.3
 installation, but the product is now compatible only with Plone 4+.
 
-Keeping code compatibility with older version is commonly simple (see "`Upgrading Plone 3.x to 4.0`__" or
-"``__" and "`Upgrading Plone 4.0 to 4.1`__").
+Keeping code compatibility with older version is commonly simple (see "`Upgrading Plone 3.x to 4.0`__" and
+"`Upgrading Plone 4.0 to 4.1`__").
 
 __ http://plone.org/documentation/manual/upgrade-guide/version/upgrading-plone-3-x-to-4.0 
 __ http://plone.org/documentation/manual/upgrade-guide/version/upgrading-plone-4.0-to-4.1/referencemanual-all-pages
