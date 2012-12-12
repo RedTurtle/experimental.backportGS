@@ -6,7 +6,7 @@ version = '0.1'
 setup(name='experimental.backportGS',
       version=version,
       description="Monkey-patch Plone 3 to make Plone 4 Generic Setup import steps to continue working",
-      long_description=open("README.txt").read() + "\n" +
+      long_description=open("README.rst").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from
       # http://pypi.python.org/pypi?:action=list_classifiers
