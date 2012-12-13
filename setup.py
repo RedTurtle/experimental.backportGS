@@ -28,7 +28,7 @@ setup(name='experimental.backportGS',
       install_requires=[
           'setuptools',
           'Products.CMFPlone<=4.0b1',
-          'collective.monkeypatcher',
+          'collective.monkeypatcher>1.0',
       ],
       entry_points="""
       # -*- Entry points: -*-
